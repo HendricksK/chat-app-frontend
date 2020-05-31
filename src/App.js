@@ -34,12 +34,18 @@ class App extends Component {
 		}
 	}
 
+	// setMessageValue(event) {
+	// 	console.log(event)
+	// 	this.state.msg = event.target.value;
+	// }
+
 	render() {
 		return (
 				<div className="App">
 					<Header />
 					<ChatHistory chatHistory={this.state.chatHistory} />
 					<ChatInput send={this.send} />
+					{/* <ChatInput onChange={this.setMessageValue} /> */}
 					{/* <button onClick={this.send}>Hit</button> */}
 				</div>
 		);
